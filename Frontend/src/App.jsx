@@ -9,6 +9,7 @@ import About from './Components/About/About';
 import Booking from './Components/Booking/Booking';
 import Support from './Components/Support/Support';
 import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
 import Detail from './Components/Detail/Detail';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path='booking' element={<Booking />} />
             <Route path='support' element={<Support />} />
             <Route path='login' element={<Login />} />
+            <Route path='register' element={<Register />} />
             <Route path='detail' element={<Detail />} />
           </Routes>
         </div>
