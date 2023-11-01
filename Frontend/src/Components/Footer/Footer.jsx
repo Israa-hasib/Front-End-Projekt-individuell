@@ -5,10 +5,11 @@ import {
   MDBCol,
   MDBRow
 } from 'mdb-react-ui-kit';
+import './footer.css';
 
 export default function App() {
   return (
-    <MDBFooter bgColor='light' className='text-center text-lg-left'>
+    <MDBFooter className='text-center text-lg-left'>
       <MDBContainer className='p-4'>
         <MDBRow>
           <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
