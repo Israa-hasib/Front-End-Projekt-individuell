@@ -1,3 +1,15 @@
+.h1.register {
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
 .btn-create {
     max-width: 200px; /* Maximal bredd på 200 pixlar */
     width: 100%; /* Tar upp all tillgänglig bredd */

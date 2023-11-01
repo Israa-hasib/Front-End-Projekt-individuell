@@ -1,0 +1,30 @@
+.h1.support {
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.btn-send {
+    max-width: 200px;
+    width: 100%; 
+    background-color: #0094ff;
+    margin-right: auto;
+    }
+
+.form {
+    display: block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+}

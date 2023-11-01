@@ -1,10 +1,29 @@
-import React from 'react'
-import './support.css'
+import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import "bootstrap/dist/css/bootstrap.min.css";
+import './support.css'; 
 
-const Support = () => {
+function BasicExample() {
   return (
-    <div>Support</div>
-  )
+    <Form className='form'>
+      <h1 className='h1 support'>SUPPORT</h1>
+      
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label className='email text'>Email</Form.Label>
+        <Form.Control className='input email' type="email"/>
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label className='message text'>Message</Form.Label>
+        <Form.Control className='input messade' type="message"/>
+      </Form.Group>
+
+      <Button className="btn-send" variant="primary" type="submit">
+        Send
+      </Button>
+    </Form>
+  );
 }
 
-export default Support
+export default BasicExample;

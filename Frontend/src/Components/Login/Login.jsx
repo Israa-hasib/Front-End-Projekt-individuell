@@ -7,6 +7,8 @@ import './login.css';
 function BasicExample() {
   return (
     <Form className='form'>
+      <h1 className='h1 login'>LOGIN</h1>
+      
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label className='email text'>Email</Form.Label>
         <Form.Control className='input email' type="email"/>
