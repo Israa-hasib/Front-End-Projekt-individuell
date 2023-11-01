@@ -14,9 +14,9 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/">About</Nav.Link>
-            <Nav.Link href="/">Bookings</Nav.Link>
-            <Nav.Link href="/">Support</Nav.Link>
+            <Nav.Link href="/About">About</Nav.Link>
+            <Nav.Link href="/Booking">Bookings</Nav.Link>
+            <Nav.Link href="/Support">Support</Nav.Link>
             <NavDropdown title="Login" id="basic-nav-dropdown" className='dropdown'>
               <NavDropdown.Item href="/Login">Login</NavDropdown.Item>
               <NavDropdown.Item href="/Register"> Register</NavDropdown.Item>

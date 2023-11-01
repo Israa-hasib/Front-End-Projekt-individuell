@@ -6,28 +6,28 @@ import './register.css'
 
 function BasicExample() {
   return (
-    <Form>
+    <Form className='form'>
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>First Name</Form.Label>
-        <Form.Control type="firstname" placeholder="First Name" />
+        <Form.Control type="firstname"/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Last Name</Form.Label>
-        <Form.Control type="lastname" placeholder="Last Name" />
+        <Form.Control type="lastname"/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email</Form.Label>
-        <Form.Control type="email" placeholder="Email" />
+        <Form.Control type="email"/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control type="password"/>
       </Form.Group>
 
-      <Button variant="primary" type="create">
+      <Button className='btn-create' variant="primary" type="create">
         Create
       </Button>
     </Form>

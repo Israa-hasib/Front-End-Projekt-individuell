@@ -16,7 +16,7 @@ export default function App() {
 
             <ul className='list-unstyled mb-0'>
               <li>
-                <a href='./Components/Homepage/Homepage' className='text-dark'>
+                <a href='./' className='text-dark'>
                   homepage
                 </a>
               </li>
@@ -28,7 +28,7 @@ export default function App() {
 
             <ul className='list-unstyled'>
               <li>
-                <a href='./Components/About/About' className='text-dark'>
+                <a href='./About' className='text-dark'>
                   about
                 </a>
               </li>
@@ -40,7 +40,7 @@ export default function App() {
 
             <ul className='list-unstyled mb-0'>
               <li>
-                <a href='./Components/Booking/Booking' className='text-dark'>
+                <a href='./Booking' className='text-dark'>
                   booking
                 </a>
               </li>
@@ -52,7 +52,7 @@ export default function App() {
 
             <ul className='list-unstyled'>
               <li>
-                <a href='./Components/Support/Support' className='text-dark'>
+                <a href='./Support' className='text-dark'>
                   support
                 </a>
               </li>

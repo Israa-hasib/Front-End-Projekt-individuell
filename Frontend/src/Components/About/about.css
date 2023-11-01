@@ -1,0 +1,66 @@
+.h1.about {
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.caption {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-family: 'Roboto Mono';
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.cp1 {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cp2 {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Responsivitet för mindre skärmar */
+@media (max-width: 768px) {
+    .h1.about {
+        font-size: 16px;
+        width: auto;
+    }
+
+    .img {
+        width: 80%;
+    }
+
+    .caption {
+        width: 80%;
+        font-size: 10px;
+    }
+
+    .cp1, .cp2 {
+        width: auto;
+    }
+}
