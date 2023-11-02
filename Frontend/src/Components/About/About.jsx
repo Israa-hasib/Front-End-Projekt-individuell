@@ -3,7 +3,7 @@ import Figure from 'react-bootstrap/Figure';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './about.css';
 
-function FigureExample() {
+function About() {
   return (
     <div className="about-container">
       <Figure>
@@ -60,4 +60,4 @@ function FigureExample() {
   );
 }
 
-export default FigureExample;
+export default About;

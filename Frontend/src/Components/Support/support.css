@@ -51,3 +51,8 @@
     width: 300px; 
     border-color: black;
 }
+
+.input.message {
+    height: 100px; 
+    border-radius: 20px;
+}

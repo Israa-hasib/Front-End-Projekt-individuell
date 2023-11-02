@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './register.css'
 
-function BasicExample() {
+function Register() {
   return (
     <Form className='form'>
       <h1 className='h1 register'>REGISTER</h1>
@@ -36,4 +36,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Register;

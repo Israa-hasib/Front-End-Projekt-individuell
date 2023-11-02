@@ -1,0 +1,70 @@
+   .h1.home {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  }
+  
+  .card {
+    max-width: 50rem;
+    width: 90%;
+    border-radius: 10px;
+    margin: 20px auto;
+    border-color: black;
+    position: relative;
+  }
+  
+  .card-image {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .card-text p {
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  .wifi-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .h1.home {
+      font-size: 16px;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  
+    .card-container {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
+  

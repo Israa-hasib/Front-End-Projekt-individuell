@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './header.css';
 
-function BasicExample() {
+function Header() {
   return (
     <Navbar expand="lg" className="header">
       <Container>
@@ -29,4 +29,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Header;
