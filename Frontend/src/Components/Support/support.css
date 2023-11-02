@@ -10,14 +10,19 @@
 }
 
 .btn-send {
-    max-width: 200px;
-    width: 100%; 
+    max-width: 150px;
+    width: 100%;
     background-color: #0094ff;
     margin-right: auto;
     margin-left: auto; /* Center the button */
+    border-radius: 50px; /* Gör knappen till en avlång cirkel */
+    height: 25px; /* Här anger du den önskade höjden, till exempel 20 pixlar */
 }
 
 .form {
+    display: flex; /* Använd flexbox */
+    flex-direction: column; /* Stapla elementen vertikalt */
+    align-items: center; /* Centrera elementen horisontellt */
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -26,5 +31,12 @@
     margin-bottom: 100px;
     max-width: 800px;
     margin-right: auto;
-    margin-left: auto; /* Center the form */
+    margin-left: auto; /* Centera formuläret */
+}
+
+.input.email,
+.input.message {
+    border-radius: 50px; /* Justera radien efter behov för att skapa en avlång cirkel */
+    height: 25px; /* Här anger du den önskade höjden, till exempel 20 pixlar */
+    width: 300px; /* Här anger du den önskade bredden, till exempel 300 pixlar */
 }
