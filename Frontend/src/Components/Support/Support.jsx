@@ -10,12 +10,12 @@ function BasicExample() {
       <h1 className='h1 support'>SUPPORT</h1>
       
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label className='email text'>Email</Form.Label>
+        <Form.Label className='input-label'>Email</Form.Label>
         <Form.Control className='input email' type="email"/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label className='message text'>Message</Form.Label>
+        <Form.Label className='input-label'>Message</Form.Label>
         <Form.Control className='input message' type="message"/>
       </Form.Group>
 

@@ -1,28 +1,38 @@
 .h1.support {
-    font-family: 'Roboto Mono';
     font-size: 20px;
-    font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
     width: 100%;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
+
+.input-label {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  }
 
 .btn-send {
     max-width: 150px;
     width: 100%;
     background-color: #0094ff;
     margin-right: auto;
-    margin-left: auto; /* Center the button */
-    border-radius: 50px; /* Gör knappen till en avlång cirkel */
-    height: 25px; /* Här anger du den önskade höjden, till exempel 20 pixlar */
+    margin-left: auto; 
+    border-radius: 50px;
+    height: 25px; 
+    font-size: 13px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .form {
-    display: flex; /* Använd flexbox */
-    flex-direction: column; /* Stapla elementen vertikalt */
-    align-items: center; /* Centrera elementen horisontellt */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -31,12 +41,13 @@
     margin-bottom: 100px;
     max-width: 800px;
     margin-right: auto;
-    margin-left: auto; /* Centera formuläret */
+    margin-left: auto;
 }
 
 .input.email,
 .input.message {
-    border-radius: 50px; /* Justera radien efter behov för att skapa en avlång cirkel */
-    height: 25px; /* Här anger du den önskade höjden, till exempel 20 pixlar */
-    width: 300px; /* Här anger du den önskade bredden, till exempel 300 pixlar */
+    border-radius: 50px;
+    height: 25px; 
+    width: 300px; 
+    border-color: black;
 }

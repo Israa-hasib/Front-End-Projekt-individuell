@@ -1,13 +1,12 @@
 .h1.about {
-    font-family: 'Roboto Mono';
     font-size: 20px;
-    font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
     width: 500px;
     margin: 0 auto;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .img {
@@ -25,7 +24,7 @@
     margin-right: auto;
     width: 50%;
     font-family: 'Roboto Mono';
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     color: black;
     line-height: 20px;
