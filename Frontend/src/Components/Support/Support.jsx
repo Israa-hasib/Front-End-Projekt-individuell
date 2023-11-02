@@ -16,7 +16,7 @@ function BasicExample() {
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label className='message text'>Message</Form.Label>
-        <Form.Control className='input messade' type="message"/>
+        <Form.Control className='input message' type="message"/>
       </Form.Group>
 
       <Button className="btn-send" variant="primary" type="submit">
