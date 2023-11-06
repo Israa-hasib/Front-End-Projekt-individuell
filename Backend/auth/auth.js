@@ -10,7 +10,7 @@ exports.generateToken = (user) => {
 
 exports.verifyToken = (req, res, next) => {
 
-  // Bearer <token>
+
   try {
     const token = req.headers.authorization.split(' ')[1];
     req.userData = jwt.verify(token, secretKey)
