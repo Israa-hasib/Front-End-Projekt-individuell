@@ -17,7 +17,7 @@
 // module.exports = router;
 
 const router = require('express').Router();
-const roomModel = require('../Models/roomModel'); // Byt ut "accommodationModel" till "roomModel"
+const roomModel = require('../models/roomModel'); // Byt ut "accommodationModel" till "roomModel"
 
 router.post('/', roomModel.createNewRoom); // Byt ut "accommodationModel.createNewAccommodation" till "roomModel.createNewRoom"
 

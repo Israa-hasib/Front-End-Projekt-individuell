@@ -20,8 +20,8 @@
 // module.exports = router;
 
 const router = require('express').Router();
-const bookingModel = require('../Models/bookingModel') // Byt ut "reservationModel" till "bookingModel"
-const auth = require('../Authentication/auth')
+const bookingModel = require('../models/bookingModel') // Byt ut "reservationModel" till "bookingModel"
+const auth = require('../auth/auth')
 
 router.post('/', bookingModel.createNewBooking); // Byt ut "reservationModel.createNewReservation" till "bookingModel.createNewBooking"
 

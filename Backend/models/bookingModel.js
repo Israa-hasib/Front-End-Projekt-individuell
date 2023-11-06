@@ -114,7 +114,7 @@
 //       })
 //     })
 // }
-const Booking = require('../Schemas/bookingSchema');
+const Booking = require('../schemas/bookingSchema');
 
 exports.createNewBooking = async (req, res) => {
   const { user, room, checkin, checkout } = req.body; // Changed accommodation to room

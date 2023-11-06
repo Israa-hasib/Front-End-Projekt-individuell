@@ -92,7 +92,7 @@
 //     })
 // }
 
-const Room = require('../Schemas/accommodationSchema'); // Changed Accommodation to Room
+const Room = require('../schemas/roomSchema'); // Changed Accommodation to Room
 
 exports.createNewRoom = (req, res) => { // Changed createNewAccommodation to createNewRoom
   const { title, host, location, description, price, imageUrl } = req.body;

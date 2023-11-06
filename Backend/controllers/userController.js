@@ -1,6 +1,6 @@
 const router = require('express').Router()
-const userModel = require('../Models/userModel')
-const auth = require('../Authentication/auth')
+const userModel = require('../models/userModel')
+const auth = require('../auth/auth')
 
 // Register a new user
 router.post('/register', userModel.registerUser);

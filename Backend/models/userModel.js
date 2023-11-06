@@ -1,6 +1,6 @@
-const User = require('../Schemas/userSchema');
+const User = require('../schemas/userSchema');
 const bcrypt = require('bcryptjs');
-const auth = require('../Authentication/auth');
+const auth = require('../auth/auth');
 
 exports.registerUser = async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
