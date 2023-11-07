@@ -11,10 +11,13 @@ import Support from './Components/Support/Support';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Detail from './Components/Detail/Detail';
+import RoomProvider from './Context/RoomContext';
 
 function App() {
   return (
+  
     <BrowserRouter>
+      <RoomProvider>
       <div>
         <Header />
 
@@ -32,7 +35,9 @@ function App() {
 
         <Footer />
       </div>
+      </RoomProvider>
     </BrowserRouter>
+ 
   );
 }
 
