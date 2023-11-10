@@ -2,6 +2,7 @@ const Room = require('../schemas/roomSchema');
 
 exports.createNewRoom = (req, res) => { 
   const { title, host, location, description, price, imageUrl } = req.body;
+  const images = req.body.images || []
 
   if (!title || !host || !location || !description || !price || !imageUrl) {
     res.status(400).json({
@@ -10,7 +11,7 @@ exports.createNewRoom = (req, res) => {
     return
   }
 
-  Room.create({ title, host, location, description, price, imageUrl }) 
+  Room.create({ title, host, location, description, price, imageUrl, images }) 
     .then(data => res.status(201).json(data))
     .catch(() => res.status(500).json({ message: 'Something went wrong when adding the room'}))
 }
