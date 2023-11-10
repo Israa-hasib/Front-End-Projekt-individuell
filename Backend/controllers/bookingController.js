@@ -2,7 +2,7 @@ const router = require('express').Router();
 const bookingModel = require('../models/bookingModel') 
 const auth = require('../auth/auth')
 
-router.post('/', bookingModel.createNewBooking); 
+router.post('/', auth.verifyToken, bookingModel.createNewBooking); 
 
 router.get('/', bookingModel.getBookings); 
 

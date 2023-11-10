@@ -68,7 +68,7 @@ function DetailPage() {
           navigate("/booking")
         } else {
           // Handle failed reservation, e.g., show an error message to the user
-          console.error('Reservation failed');
+          console.error('Booking failed');
           console.log(response);
         }
       } catch (error) {
@@ -77,7 +77,7 @@ function DetailPage() {
       }
     } else {
       // Handle invalid reservation dates, e.g., show an error message to the user
-      console.error('Invalid reservation dates');
+      console.error('Invalid Booking dates');
     }
   };
 

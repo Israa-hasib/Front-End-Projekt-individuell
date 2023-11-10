@@ -8,8 +8,8 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 // Controllers
-app.use('/api/users', require('./Controllers/userController'))
-app.use('/api/rooms', require('./Controllers/roomController'))
-app.use('/api/bookings', require('./Controllers/bookingController'))
+app.use('/api/users', require('./controllers/userController'))
+app.use('/api/rooms', require('./controllers/roomController'))
+app.use('/api/bookings', require('./controllers/bookingController'))
 
 module.exports = app;
