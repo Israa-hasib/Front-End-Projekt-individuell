@@ -1,9 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-
 import Homepage from './Components/Homepage/Homepage';
 import About from './Components/About/About';
 import Booking from './Components/Booking/Booking';
@@ -12,11 +10,13 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Detail from './Components/Detail/Detail';
 import RoomProvider from './Context/RoomContext';
+import UserProvider from './Context/UserContext';
 
 function App() {
   return (
   
     <BrowserRouter>
+    <UserProvider>
       <RoomProvider>
       <div>
         <Header />
@@ -36,6 +36,7 @@ function App() {
         <Footer />
       </div>
       </RoomProvider>
+      </UserProvider>
     </BrowserRouter>
  
   );
