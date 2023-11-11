@@ -63,7 +63,7 @@ function RegisterPage() {
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" name="password" value={formData.password} onChange={handleChange} />
         </Form.Group>
-        <Button type="submit">Create User</Button>
+        <Button className='btn-create' type="submit">Create User</Button>
       </Form>
     </Container>
   );

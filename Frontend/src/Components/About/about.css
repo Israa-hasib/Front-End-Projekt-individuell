@@ -1,3 +1,10 @@
+.container-about {
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value for the desired transparency */
+    padding: 20px; /* Add padding for spacing around the text */
+    border-radius: 10px;
+    color: white;
+  }
+  
 .h1.about {
     font-size: 20px;
     color: rgb(255, 255, 255);

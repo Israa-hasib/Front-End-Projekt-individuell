@@ -14,6 +14,7 @@ function About() {
           src="https://neuro.se/media/13372/computer-4795762_1280.jpg?center=0.57062146892655363,0.44736842105263158&mode=crop&width=830&height=440&rnd=132816084000000000"
         />
         <Figure.Caption className='caption'>
+          <div className='container-about'>
           <p className='cp1'>
             Welcome to DevBnb: Where Developers Feel at Home
           </p>
@@ -54,6 +55,7 @@ function About() {
           Make DevBnb your home away from home and elevate your coding experience.
           Book your stay today and unlock a world of opportunities for learning, collaboration, and innovation.
           </p>
+          </div>
         </Figure.Caption>
       </Figure>
     </div>

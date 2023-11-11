@@ -55,7 +55,7 @@ function LoginPage() {
           <Form.Control type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </Form.Group>
 
-        <Button onClick={handleLogin}>Log In</Button>
+        <Button className='btn-signin' onClick={handleLogin}>Log In</Button>
       </Form>
     </Container>
   );

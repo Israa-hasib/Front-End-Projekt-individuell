@@ -7,7 +7,9 @@ import {
 } from 'mdb-react-ui-kit';
 import './footer.css';
 
-export default function App() {
+const App = () => {
+  const linkStyle = { color: 'white' };
+
   return (
     <MDBFooter className='text-center text-lg-left'>
       <MDBContainer className='p-4'>
@@ -17,7 +19,7 @@ export default function App() {
 
             <ul className='list-unstyled mb-0'>
               <li>
-                <a href='./' className='text-dark'>
+                <a href='./' style={linkStyle}>
                   Homepage
                 </a>
               </li>
@@ -29,7 +31,7 @@ export default function App() {
 
             <ul className='list-unstyled'>
               <li>
-                <a href='./About' className='text-dark'>
+                <a href='./About' style={linkStyle}>
                   About
                 </a>
               </li>
@@ -41,7 +43,7 @@ export default function App() {
 
             <ul className='list-unstyled mb-0'>
               <li>
-                <a href='./Booking' className='text-dark'>
+                <a href='./Booking' style={linkStyle}>
                   Booking
                 </a>
               </li>
@@ -53,7 +55,7 @@ export default function App() {
 
             <ul className='list-unstyled'>
               <li>
-                <a href='./Support' className='text-dark'>
+                <a href='./Support' style={linkStyle}>
                   Support
                 </a>
               </li>
@@ -64,3 +66,5 @@ export default function App() {
     </MDBFooter>
   );
 }
+
+export default App;
