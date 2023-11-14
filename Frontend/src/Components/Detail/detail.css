@@ -1,0 +1,66 @@
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrera horisontellt */
+    align-items: center; /* Centrera vertikalt */
+    height: 100%; /* Fyll höjden av card-body */
+  }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrera horisontellt */
+  }
+  
+  .img-gallery{
+    justify-content: center; /* Centrera horisontellt */
+
+  }
+  .card1 {
+    flex: 2; /* Tar upp två delar av tre på stora skärmar */
+    width: 600px; /* Bredd enligt önskemål */
+    height: 400px; /* Höjd enligt önskemål */
+    margin-right: 10px; /* Lägg till marginal mellan de små bilderna */
+    margin-bottom: 10px; /* Justera efter behov */
+    margin-top: 10px;
+  }
+  
+  .small-cards {
+    display: flex;
+    flex-direction: column; /* Stapla de små bilderna i en kolumn */
+  }
+  
+  .card2,
+  .card3 {
+    width: 300px; /* Bredd enligt önskemål */
+    height: 200px; /* Höjd enligt önskemål */
+    margin-bottom: 10px; /* Justera efter behov */
+    margin-right: 10px;
+
+  }
+  
+  .card4,
+  .card5 {
+    width: 300; /* Bredd enligt önskemål */
+    height: 200px; /* Höjd enligt önskemål */
+    margin-top: 10px; /* Justera efter behov för avståndet över */
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .card1,
+    .small-cards,
+    .card2,
+    .card3,
+    .card4,
+    .card5 {
+      flex: auto; /* Jämna ut på mindre skärmar */
+      width: 100%; /* Full bredd på mindre skärmar */
+      height: auto; /* Automatisk höjd för att bibehålla proportioner */
+      margin-right: 0; /* Ingen marginal på mindre skärmar */
+      margin-top: 0; /* Ingen toppmarginal på mindre skärmar */
+      margin-bottom: 0; /* Ingen bottenmarginal på mindre skärmar */
+    }
+  }
+  
