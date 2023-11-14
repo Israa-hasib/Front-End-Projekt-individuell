@@ -14,3 +14,10 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
+.hamburger{
+    border-radius: 50px;
+    border-color: black;
+    border-style: solid;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+}
