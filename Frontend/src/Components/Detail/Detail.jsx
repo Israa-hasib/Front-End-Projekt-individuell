@@ -85,18 +85,23 @@ function DetailPage() {
 
   return (
     <div className="card-container">
+      <h1 className='h1-detail'>DETAIL</h1>
       <div className="row justify-content-center">
         <div className="col-lg-8 col-md-10 col-sm-12">
           <div className="image-gallery">
             {/* Display multiple images here */}
-            <img className='card1' src={detailRoom.imageUrl} alt="Room 1" />
-            <img className='card2' src={detailRoom.imageUrl} alt="Room 2" />
-            <img className='card3' src={detailRoom.imageUrl} alt="Room 3" />
-            <img className='card4' src={detailRoom.imageUrl} alt="Room 4" />
-            <img className='card5' src={detailRoom.imageUrl} alt="Room 5" />
+            <div className="image-container">
+              <img className='card1' src={detailRoom.imageUrl} alt="Room 1" />
+              <div className="small-images">
+                <img className='card2' src={detailRoom.imageUrl} alt="Room 2" />
+                <img className='card3' src={detailRoom.imageUrl} alt="Room 3" />
+                <img className='card4' src={detailRoom.imageUrl} alt="Room 4" />
+                <img className='card5' src={detailRoom.imageUrl} alt="Room 5" />
+              </div>
+            </div>
           </div>
-          <Card>
-            <Card.Body className='card-body'>
+          <Card style={{ borderRadius: '16px', background: 'var(--background-black-50, rgba(0, 0, 0, 0.50))' }}>
+            <Card.Body className='card-detailbody'>
               <Card.Title>{detailRoom.title}</Card.Title>
               <Card.Text>{detailRoom.description}</Card.Text>
               <Card.Text>
@@ -124,10 +129,9 @@ function DetailPage() {
                   startDate={startDate}
                   endDate={endDate}
                   minDate={startDate}
-                  className="form-control"
-                />
+                  className="form-control"/>
               </div>
-              <Button className='btn btn-primary' onClick={handleBooking}>
+              <Button className='btn-detail' onClick={handleBooking}>
                 Reserve
               </Button>
             </Card.Body>

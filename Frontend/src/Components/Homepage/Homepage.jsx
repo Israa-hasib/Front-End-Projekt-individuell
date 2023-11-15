@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useRooms } from '../../Context/RoomContext';
+import './homepage.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWifi } from '@fortawesome/free-solid-svg-icons';
 
 function Homepage() {
   const { rooms } = useRooms();
@@ -14,15 +17,20 @@ function Homepage() {
 
   return (
     <div className="my-4"> {/* Add margin top and bottom here */}
+      <h1 className='h1-home'>HOME</h1>
       <Row xs={1} md={2} lg={3} className="g-4">
         {rooms.map(room => (
           <Col key={room._id}>
             <Link to={`/Detail/${room._id}`} style={{ textDecoration: 'none' }}>
-              <Card>
-                {room.imageUrl && <Card.Img variant="top" src={room.imageUrl} alt={room.title} />}
-                <Card.Body>
-                  <Card.Title>{room.title}</Card.Title>
+              <Card className='card'>
+                {room.imageUrl && <Card.Img variant="top" src={room.imageUrl} alt={room.title} style={{ height: '200px' }} />}
+                <Card.Body className='card-body'>
+                  <Card.Title className='card-title'>{room.title}</Card.Title>
+                  <p>Private host</p>
                   <span>${room.price}/night</span>
+                  <div className='wifi-icon-container'>
+                    <FontAwesomeIcon icon={faWifi} className='wifi-icon' />
+                  </div>
                 </Card.Body>
               </Card>
             </Link>

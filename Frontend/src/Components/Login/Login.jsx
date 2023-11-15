@@ -46,7 +46,7 @@ function LoginPage() {
   return (
     <Container className='login'>
       <Form>
-        <h1 className='h1-login'>Login</h1>
+        <h1 className='h1-login'>LOGIN</h1>
         <Form.Group className="mb-3" controlId="email">
           <Form.Label className='input-label'>Email</Form.Label>
           <Form.Control type="email" placeholder="name@example.com" value={email} onChange={(e) => setEmail(e.target.value)} />

@@ -1,3 +1,4 @@
+/* Grundstilar som gäller för alla skärmstorlekar */
 .h1.support {
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -12,18 +13,18 @@
     font-size: 16px;
     color: rgb(255, 255, 255);
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-  }
+}
 
 .btn-send {
     max-width: 150px;
     width: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,117,255,1) 50%, rgba(0,0,0,1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 117, 255, 1) 50%, rgba(0, 0, 0, 1) 100%);
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
     border-radius: 50px;
-    height: 25px; 
-    font-size: 13px; 
+    height: 25px;
+    font-size: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,13 +32,13 @@
 }
 
 .form {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.5; 
+    line-height: 1.5;
     margin-top: 100px;
     margin-bottom: 100px;
     max-width: 800px;
@@ -48,12 +49,27 @@
 .input.email,
 .input.message {
     border-radius: 50px;
-    height: 25px; 
-    width: 300px; 
+    height: 25px;
+    width: 300px;
     border-color: black;
 }
 
 .input.message {
-    height: 100px; 
+    height: 100px;
     border-radius: 20px;
+}
+
+/* Media queries för att göra designen responsiv */
+@media only screen and (max-width: 600px) {
+    /* Anpassa stilar för mindre skärmar här */
+    .form {
+        padding: .375rem .75rem;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .input.email,
+    .input.message {
+        width: 100%;
+    }
 }

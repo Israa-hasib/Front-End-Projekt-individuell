@@ -47,7 +47,7 @@ function RegisterPage() {
   return (
     <Container className='register'>
       <Form className='' onSubmit={handleSubmit}>
-        <h1 className='h1-register'>Register</h1>
+        <h1 className='h1-register'>REGISTER</h1>
         <Form.Group className="mb-3" controlId="firstName">
           <Form.Label className='input-label'>First Name</Form.Label>
           <Form.Control type="text" name="firstName" value={formData.firstName} onChange={handleChange} />
