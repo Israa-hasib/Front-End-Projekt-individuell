@@ -1,21 +1,122 @@
 .red-button {
-    background-color: #ff0000;
-    border-color: #ff0000;
-    color: #fff;
+    max-width: 150px;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 100%);
+    border-color: rgb(205, 0, 0);
+    border-radius: 50px; 
+    height: 25px; 
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .red-button:hover {
-    background-color: #cc0000;
-    border-color: #cc0000;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 100%);
 }
 
 .green-button {
-    background-color: #00ff00;
-    border-color: #00ff00;
-    color: #fff;
+    max-width: 150px;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(0,0,0,1) 100%);
+    border-color: green; 
+    border-radius: 50px; 
+    height: 25px; 
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .green-button:hover {
-    background-color: #00cc00;
-    border-color: #00cc00;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(0,0,0,1) 100%);
 }
+
+
+.custom-modal-container {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(0,0,0,1) 100%);
+
+}
+
+.p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.btn-succes {
+    max-width: 150px;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(0,0,0,1) 100%);
+    border-color: green; 
+    border-radius: 50px; 
+    height: 25px; 
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.pay-container {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(108,108,108,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+.pay {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,117,255,1) 50%, rgba(0,0,0,1) 100%);   max-width: 150px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto; 
+    border-radius: 50px; 
+    height: 25px; 
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.pay-text {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.swish {
+    height: 50px;
+    width: 50px;
+}
+
+.paypal {
+    height: 50px;
+    width: 50px;
+}
+
+.mastercard {
+    height: 50px;
+    width: 50px;
+}
+
+.swish, .paypal, .mastercard {
+    width: 50px;
+    height: auto; 
+    margin: 10px;
+  }

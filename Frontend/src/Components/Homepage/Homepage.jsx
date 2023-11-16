@@ -26,10 +26,10 @@ function Homepage() {
                 {room.imageUrl && <Card.Img variant="top" src={room.imageUrl} alt={room.title} style={{ height: '200px' }} />}
                 <Card.Body className='card-body'>
                   <Card.Title className='card-title'>{room.title}</Card.Title>
-                  <p>Private host</p>
-                  <span>${room.price}/night</span>
+                  <p className='p-home'>Private host<p className='p-home'>Date</p></p>
+                  <span>{room.price}kr SEK night</span>
                   <div className='wifi-icon-container'>
-                    <FontAwesomeIcon icon={faWifi} className='wifi-icon' />
+                  <FontAwesomeIcon icon={faWifi} className='wifi-icon' />
                   </div>
                 </Card.Body>
               </Card>

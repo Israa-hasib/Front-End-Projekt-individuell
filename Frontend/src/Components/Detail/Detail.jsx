@@ -8,10 +8,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './detail.css';
 import { useRooms } from '../../Context/RoomContext';
 import { useUser } from '../../Context/UserContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faDoorOpen } from '@fortawesome/free-solid-svg-icons';
+import { faMedal } from '@fortawesome/free-solid-svg-icons';
+import { faBed } from '@fortawesome/free-solid-svg-icons';
+import { faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faWifi } from '@fortawesome/free-solid-svg-icons';
+import { faCartFlatbedSuitcase } from '@fortawesome/free-solid-svg-icons';
+import { faCar } from '@fortawesome/free-solid-svg-icons';
+import { faWater } from '@fortawesome/free-solid-svg-icons';
+import { faMugSaucer } from '@fortawesome/free-solid-svg-icons';
+import { faPizzaSlice } from '@fortawesome/free-solid-svg-icons';
+import { faBath } from '@fortawesome/free-solid-svg-icons';
+import { faFan } from '@fortawesome/free-solid-svg-icons';
+
+
 
 function DetailPage() {
   const userState = useUser();
-  const navigate = useNavigate(); // useNavigate hook for navigation
+  const navigate = useNavigate(); 
   const params = useParams();
   const rooms = useRooms();
   const { detailRoom, getDetailRoom } = rooms;
@@ -27,7 +44,7 @@ function DetailPage() {
   }, [params, userState, navigate]);
 
   if (!detailRoom) {
-    return <div>Loading...</div>; // Handle loading state if user is not authenticated or accommodation data is not available yet
+    return <div>Loading...</div>; 
   }
 
   const handleStartDateChange = (date) => {
@@ -56,28 +73,28 @@ function DetailPage() {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            // Add authorization header with user token if needed
+            
             Authorization: `Bearer ${userState.token}`
           },
           body: JSON.stringify(bookingData),
         });
 
         if (response.ok) {
-          // Handle successful reservation, e.g., show a success message to the user
+          
           console.log('Booking successful!');
 
           navigate("/booking")
         } else {
-          // Handle failed reservation, e.g., show an error message to the user
+          
           console.error('Booking failed');
           console.log(response);
         }
       } catch (error) {
-        // Handle network error, e.g., show a generic error message to the user
+        
         console.error('Error:', error);
       }
     } else {
-      // Handle invalid reservation dates, e.g., show an error message to the user
+      
       console.error('Invalid Booking dates');
     }
   };
@@ -105,26 +122,52 @@ function DetailPage() {
           </div>
           <Card style={{ borderRadius: '16px', background: 'var(--background-black-50, rgba(0, 0, 0, 0.50))', margin: 0, width: "unset" }}>
             <Card.Body className='card-detailbody'>
-              <Card.Title>{detailRoom.title}</Card.Title>
-              <Card.Text>{detailRoom.description}</Card.Text>
+              <Card.Title className='title-detail'>{detailRoom.title} <br/>2 guests - 1 bedroom - 2 bed - 2 baths </Card.Title>
+              {/* <Card.Text>{detailRoom.description}</Card.Text> */}
+              {/* <Card.Text>
+              <FontAwesomeIcon icon={faUserCircle} style={{"--fa-primary-color": "#000000", "--fa-secondary-color": "#ffffff", marginRight: '8px'}} size='2x' /> {detailRoom.host} is your host <br />Superhost - 4 år som värd <br />
+              <FontAwesomeIcon icon={faLocationDot} style={{"--fa-primary-color": "#ffffff", "--fa-secondary-color": "#000000", marginRight: '8px'}} size='2x' /> Location: {detailRoom.location}<br />
+              </Card.Text> */}
               <Card.Text>
-                Host: {detailRoom.host}<br />
-                Location: {detailRoom.location}<br />
-                Price/Night: ${detailRoom.price}
+              <FontAwesomeIcon icon={faUserCircle} style={{"--fa-primary-color": "#000000", "--fa-secondary-color": "#ffffff", marginRight: '8px'}} size='2x' />
+              {detailRoom.host} is your host <br />
+              Superhost - Minst 5 år som värd <br /><br />
+              <FontAwesomeIcon icon={faMapLocationDot} style={{color: "#ffffff", marginRight: '8px'}} size='2x' />              
+              Adress: {detailRoom.location}<br />
               </Card.Text>
+              <div>
+                <p><FontAwesomeIcon icon={faDoorOpen} style={{ color: "#ffffff", marginRight: '8px'}} size='2x'/>Self checkin <br />You can check in with the building staff </p>
+                <p><FontAwesomeIcon icon={faMedal} style={{color: "#ffffff", marginRight: '8px'}} size='2x'/>Your host is a Superhost <br />Superhost are experienced, highly rated hosts </p>
+                <p><FontAwesomeIcon icon={faLocationDot} style={{"--fa-primary-color": "#ffffff", "--fa-secondary-color": "#000000", marginRight: '8px'}} size='2x'/> Great location <br />90% of recent guests gave the location a 5-star rating </p>
+                <Card.Text> <p>Desctription</p>{detailRoom.description}</Card.Text>
+                <p>Where you'll sleep<br /><FontAwesomeIcon icon={faBed} style={{color: "#ffffff",}}/>
+                <br />Bedroom
+                <br />1 queen bed
+                </p>
+                <p>What this place offer
+                <br /><FontAwesomeIcon icon={faWifi} style={{color: "#ffffff",}} /> WiFi
+                <br /><FontAwesomeIcon icon={faCartFlatbedSuitcase} style={{color: "#ffffff",}} /> Luggage drop-off allowed
+                <br /><FontAwesomeIcon icon={faCar} style={{color: "#ffffff",}} /> Free parking on premises
+                <br /><FontAwesomeIcon icon={faWater} style={{color: "#ffffff",}} /> Beach access
+                <br /><FontAwesomeIcon icon={faMugSaucer} style={{color: "#ffffff",}} /> Coffe maker
+                <br /><FontAwesomeIcon icon={faPizzaSlice} style={{color: "#ffffff",}} /> Food delivery
+                <br /><FontAwesomeIcon icon={faBath} style={{color: "#ffffff",}} /> Bathub/Shower 
+                <br /><FontAwesomeIcon icon={faFan} style={{color: "#ffffff",}} /> Courtyard view
+                </p> 
+              </div>
               <div className="mb-3">
-                <label className="mr-3">Check-in:</label>
+                <label className="mr-3">Check-in</label>
                 <DatePicker
                   selected={startDate}
                   onChange={handleStartDateChange}
                   selectsStart
                   startDate={startDate}
                   endDate={endDate}
-                  className="form-control"
+                  className="form-date"
                 />
               </div>
               <div className="mb-3">
-                <label className="mr-3">Check-out:</label>
+                <label className="mr-3">Check-out</label>
                 <DatePicker
                   selected={endDate}
                   onChange={handleEndDateChange}
@@ -132,8 +175,11 @@ function DetailPage() {
                   startDate={startDate}
                   endDate={endDate}
                   minDate={startDate}
-                  className="form-control"/>
+                  className="form-date"/>
               </div>
+              <Card.Text>
+              {detailRoom.price}kr SEK night
+              </Card.Text>
               <Button className='btn-detail' onClick={handleBooking}>
                 Reserve
               </Button>
