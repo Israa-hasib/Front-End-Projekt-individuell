@@ -181,7 +181,7 @@ const Bookings = () => {
 
   return (
     <div className="d-flex flex-column align-items-center mt-4 mb-4">
-      {bookings.map((booking, index) => (
+      {bookings.filter(booking => booking.room).map((booking, index) => (
         <Card style={{ backgroundColor: 'var(--background-black-50, rgba(0, 0, 0, 0.50))', borderRadius: '16px', color: '#fff' }} key={index} className="w-75 mb-3">
           <Card.Body>
             <Card.Title>{booking.room.title}</Card.Title>

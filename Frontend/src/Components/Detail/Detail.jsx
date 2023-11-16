@@ -82,7 +82,7 @@ function DetailPage() {
     }
   };
 
-
+  console.log("Detail room", detailRoom)
   return (
     <div className="card-container">
       <h1 className='h1-detail'>DETAIL</h1>
@@ -93,14 +93,17 @@ function DetailPage() {
             <div className="image-container">
               <img className='card1' src={detailRoom.imageUrl} alt="Room 1" />
               <div className="small-images">
-                <img className='card2' src={detailRoom.imageUrl} alt="Room 2" />
+              {detailRoom?.images?.map((image, index) => (
+                <img key={image} className={`card${index+2}`} src={image} alt={`Room ${index+2}`}/>
+              ))}
+                {/* <img className='card2' src={detailRoom.imageUrl} alt="Room 2" />
                 <img className='card3' src={detailRoom.imageUrl} alt="Room 3" />
                 <img className='card4' src={detailRoom.imageUrl} alt="Room 4" />
-                <img className='card5' src={detailRoom.imageUrl} alt="Room 5" />
+                <img className='card5' src={detailRoom.imageUrl} alt="Room 5" /> */}
               </div>
             </div>
           </div>
-          <Card style={{ borderRadius: '16px', background: 'var(--background-black-50, rgba(0, 0, 0, 0.50))' }}>
+          <Card style={{ borderRadius: '16px', background: 'var(--background-black-50, rgba(0, 0, 0, 0.50))', margin: 0, width: "unset" }}>
             <Card.Body className='card-detailbody'>
               <Card.Title>{detailRoom.title}</Card.Title>
               <Card.Text>{detailRoom.description}</Card.Text>
