@@ -46,7 +46,7 @@ exports.getUserBookings = (req, res) => {
         message: "Could not get user bookings"
       });
     })
-}
+} 
 
 exports.getBookingById = (req, res) => {
   Booking.findById(req.params.id)

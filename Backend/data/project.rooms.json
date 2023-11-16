@@ -1,0 +1,45 @@
+[{
+  "title": "Tokyo",
+  "host": "Israa",
+  "location": "driftroad 77",
+  "description": "Very luxury",
+  "price": 5995,
+  "imageUrl": "https://static.trip101.com/main_pics/5095/medium.jpg",
+  "images": [
+    "https://bridgesandballoons.com/Images/2019/07/wooden-house-airbnb-Tokyo-4-872x584.jpg",
+    "https://bridgesandballoons.com/Images/2019/07/wooden-house-airbnb-Tokyo-4-872x584.jpg",
+    "https://bridgesandballoons.com/Images/2019/07/wooden-house-airbnb-Tokyo-4-872x584.jpg",
+    "https://bridgesandballoons.com/Images/2019/07/wooden-house-airbnb-Tokyo-4-872x584.jpg"
+  ],
+  "__v": 0
+},
+{
+  "title": "Thailand",
+  "host": "Israa",
+  "location": "paradise 23",
+  "description": "Blue water",
+  "price": 9080,
+  "imageUrl": "https://bilder.apollo.se/thailand-1556025228-127134-ImageGalleryLightbox.jpg",
+  "images": [
+    "https://vcdn1-dulich.vnecdn.net/2022/08/23/10-1661241338-1661244004.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=jFgIx2pfqwDujc_kX62M6g",
+    "https://vcdn1-dulich.vnecdn.net/2022/08/23/10-1661241338-1661244004.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=jFgIx2pfqwDujc_kX62M6g",
+    "https://vcdn1-dulich.vnecdn.net/2022/08/23/10-1661241338-1661244004.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=jFgIx2pfqwDujc_kX62M6g",
+    "https://vcdn1-dulich.vnecdn.net/2022/08/23/10-1661241338-1661244004.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=jFgIx2pfqwDujc_kX62M6g"
+  ],
+  "__v": 0
+},
+{
+  "title": "Appartement",
+  "host": "Hasse",
+  "location": "Kungsgatan 23",
+  "description": "wertyuiopoiuytrewertyuiop",
+  "price": 465,
+  "imageUrl": "https://media.istockphoto.com/id/1409552466/sv/foto/new-modern-residential-buildings-in-the-vathorst-district-in-amersfoort.webp?b=1&s=170667a&w=0&k=20&c=QJt4pi392yQwPyNGxCWhYqw1d7mABbzBOXtrh7cdUVE=",
+  "images": [
+    "https://media.istockphoto.com/id/1409552466/sv/foto/new-modern-residential-buildings-in-the-vathorst-district-in-amersfoort.webp?b=1&s=170667a&w=0&k=20&c=QJt4pi392yQwPyNGxCWhYqw1d7mABbzBOXtrh7cdUVE=",
+    "https://media.istockphoto.com/id/1409552466/sv/foto/new-modern-residential-buildings-in-the-vathorst-district-in-amersfoort.webp?b=1&s=170667a&w=0&k=20&c=QJt4pi392yQwPyNGxCWhYqw1d7mABbzBOXtrh7cdUVE=",
+    "https://media.istockphoto.com/id/1409552466/sv/foto/new-modern-residential-buildings-in-the-vathorst-district-in-amersfoort.webp?b=1&s=170667a&w=0&k=20&c=QJt4pi392yQwPyNGxCWhYqw1d7mABbzBOXtrh7cdUVE=",
+    "https://media.istockphoto.com/id/1409552466/sv/foto/new-modern-residential-buildings-in-the-vathorst-district-in-amersfoort.webp?b=1&s=170667a&w=0&k=20&c=QJt4pi392yQwPyNGxCWhYqw1d7mABbzBOXtrh7cdUVE="
+  ],
+  "__v": 0
+}]
