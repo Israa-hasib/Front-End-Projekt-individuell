@@ -123,6 +123,7 @@ function DetailPage() {
           <Card style={{ borderRadius: '16px', background: 'var(--background-black-50, rgba(0, 0, 0, 0.50))', margin: 0, width: "unset" }}>
             <Card.Body className='card-detailbody'>
               <Card.Title className='title-detail'>{detailRoom.title} <br/>2 guests - 1 bedroom - 2 bed - 2 baths </Card.Title>
+              <hr />
               {/* <Card.Text>{detailRoom.description}</Card.Text> */}
               {/* <Card.Text>
               <FontAwesomeIcon icon={faUserCircle} style={{"--fa-primary-color": "#000000", "--fa-secondary-color": "#ffffff", marginRight: '8px'}} size='2x' /> {detailRoom.host} is your host <br />Superhost - 4 år som värd <br />
@@ -132,6 +133,7 @@ function DetailPage() {
               <FontAwesomeIcon icon={faUserCircle} style={{"--fa-primary-color": "#000000", "--fa-secondary-color": "#ffffff", marginRight: '8px'}} size='2x' />
               {detailRoom.host} is your host <br />
               Superhost - Minst 5 år som värd <br /><br />
+              <hr />
               <FontAwesomeIcon icon={faMapLocationDot} style={{color: "#ffffff", marginRight: '8px'}} size='2x' />              
               Adress: {detailRoom.location}<br />
               </Card.Text>
@@ -139,11 +141,17 @@ function DetailPage() {
                 <p><FontAwesomeIcon icon={faDoorOpen} style={{ color: "#ffffff", marginRight: '8px'}} size='2x'/>Self checkin <br />You can check in with the building staff </p>
                 <p><FontAwesomeIcon icon={faMedal} style={{color: "#ffffff", marginRight: '8px'}} size='2x'/>Your host is a Superhost <br />Superhost are experienced, highly rated hosts </p>
                 <p><FontAwesomeIcon icon={faLocationDot} style={{"--fa-primary-color": "#ffffff", "--fa-secondary-color": "#000000", marginRight: '8px'}} size='2x'/> Great location <br />90% of recent guests gave the location a 5-star rating </p>
+                <hr />
                 <Card.Text> <p>Desctription</p>{detailRoom.description}</Card.Text>
-                <p>Where you'll sleep<br /><FontAwesomeIcon icon={faBed} style={{color: "#ffffff",}}/>
+                <hr />
+                <p>Where you'll sleep<br />
+                <div className='bedroom-border'>
+                <FontAwesomeIcon icon={faBed} style={{color: "#ffffff",}}/>
                 <br />Bedroom
                 <br />1 queen bed
+                </div>
                 </p>
+                <hr />
                 <p>What this place offer
                 <br /><FontAwesomeIcon icon={faWifi} style={{color: "#ffffff",}} /> WiFi
                 <br /><FontAwesomeIcon icon={faCartFlatbedSuitcase} style={{color: "#ffffff",}} /> Luggage drop-off allowed
@@ -155,6 +163,7 @@ function DetailPage() {
                 <br /><FontAwesomeIcon icon={faFan} style={{color: "#ffffff",}} /> Courtyard view
                 </p> 
               </div>
+              <hr />
               <div className="mb-3">
                 <label className="mr-3">Check-in</label>
                 <DatePicker
