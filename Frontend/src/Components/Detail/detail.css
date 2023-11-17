@@ -12,13 +12,13 @@
 .btn-detail {
   max-width: 150px;
   width: 100%;
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(0,0,0,1) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
   margin-right: auto;
-  margin-left: auto; 
-  border-radius: 50px; 
+  margin-left: auto;
+  border-radius: 50px;
   border-color: black;
-  height: 25px; 
+  height: 25px;
   font-size: 13px;
   display: flex;
   justify-content: center;
@@ -27,77 +27,124 @@
 }
 
 .card-detailbody {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrera horisontellt */
-    height: 100%; /* Fyll höjden av card-body */
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrera horisontellt */
+  height: 100%; /* Fyll höjden av card-body */
+}
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centrera horisontellt */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrera horisontellt */
+}
+
+.card-detailbody {
+  color: #fff;
+}
+
+.image-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.card1 {
+  width: 50%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.small-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card2,
+.card3,
+.card4,
+.card5 {
+  width: 48%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.title-detail {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+p,
+br {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  margin-bottom: 30px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.form-date {
+  height: 20px;
+  width: 90px;
+  border-radius: 50px;
+}
+
+.bedroom-border {
+  border: 1px solid #bfbfbf;
+  padding: 10px;
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Media query för att göra stilar responsiva för mindre skärmar */
+@media only screen and (max-width: 767px) {
+  .h1-detail {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
-  
-  .card-detailbody {
-    color: #fff;
+
+  .btn-detail {
+    max-width: 120px;
+    height: 20px;
+    font-size: 12px;
   }
-  
-  .image-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-  }
-  
+
   .card1 {
-    width: 50%; /* Anpassa bredden efter dina önskemål */
-    margin-bottom: 20px; /* Lägg till mellanrum mellan card1 och de andra korten */
-    border-radius: 10px;
+    width: 100%;
   }
-  
-  .small-images {
-    display: flex;
-    flex-wrap: wrap; /* Tillåt ombrytning för att skapa rader */
-    justify-content: space-between;
-  }
-  
+
   .card2,
   .card3,
   .card4,
   .card5 {
-    width: 48%; /* Anpassa bredden efter dina önskemål och lägg till lite marginal */
-    margin-bottom: 10px; /* Justera mellanrummet mellan små bilder */
-    border-radius: 10px;
+    width: 100%;
   }
 
-  .title-detail{
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  .title-detail {
+    font-size: 18px;
+    margin-bottom: 20px;
   }
 
-  p, br {
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    margin-bottom: 30px;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  p,
+  br {
+    font-size: 12px;
+    margin-bottom: 20px;
   }
 
   .form-date {
-    height: 20px;
-    width: 90px;
-    border-radius: 50px;
+    height: 18px;
+    width: 80px;
   }
-  
+
   .bedroom-border {
-    border: 1px solid #bfbfbf;
-    padding: 10px;  
-    height: 100px;
-    width: 200px;
-    border-radius: 10px;
-    margin-top: 10px;
+    width: 100%;
   }
+}

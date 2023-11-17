@@ -129,7 +129,8 @@ const Bookings = () => {
             <Card.Text>
               Period: {formatDate(booking.checkin)} - {formatDate(booking.checkout)}<br />
               Price/Night: {booking.room.price}kr<br />
-              Total (SEK) Price: {calculateTotalPrice(booking.checkin, booking.checkout, booking.room.price)}kr
+              <hr />
+              Total (SEK) {calculateTotalPrice(booking.checkin, booking.checkout, booking.room.price)}kr
             </Card.Text>
             <div className="d-flex justify-content-end">
               <Button variant="primary" className="red-button" style={{ marginRight: '5px' }}>Remove</Button>
