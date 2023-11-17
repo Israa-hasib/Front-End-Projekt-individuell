@@ -13,11 +13,11 @@ const Bookings = () => {
 
   useEffect(() => {
     if (userState.token) {
-      // Fetch user bookings from the API endpoint
+
       fetch('http://localhost:2323/api/bookings/user/me', {
         headers: {
           'Content-Type': 'application/json',
-          // Add authorization header with user token if needed
+
           Authorization: `Bearer ${userState.token}`
         }
       })
@@ -25,10 +25,10 @@ const Bookings = () => {
         .then((data) => {
           console.log("BOOKINGS: ", data)
           setBookings(data)
-        }) // Assuming the API response is an array of booking objects
+        }) 
         .catch((error) => console.error('Error fetching bookings:', error));
     }
-  }, [userState.token]); // Empty dependency array ensures the effect runs once after the initial render
+  }, [userState.token]); 
 
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
@@ -48,9 +48,7 @@ const Bookings = () => {
   };
 
   const handlePay = () => {
-    // Implement logic for payment
-    // You can call an API to process the payment
-    // Once payment is successful, you can open the confirmation modal
+
     setActiveModal('confirmation');
   };
 
@@ -63,16 +61,14 @@ const Bookings = () => {
       case 'payment':
         return (
         <div className="pay-container">
-          <Modal.Header closeButton>
-            <Modal.Title className='pay-text'>Payment method</Modal.Title>
-          </Modal.Header>
           <Modal.Body>
-            {/* Add your payment options here */}
-            <p className='pay-text'>Choose a payment option:</p>
-            <div>
-              <label>
-                <input type="radio" name="paymentOption" value="swish" />
-                <img className='swish' src="https://images.ctfassets.net/zrqoyh8r449h/5Kbx9XCa4oJjwgUP0RNDZY/176707fc098ba9c33a4cef9b039236f6/Swish_Logo_Primary_Light-BG_P3.png?w=600" alt="Swish Logo" />
+          <Modal.Title className='pay-text'>Payment method</Modal.Title>
+            {}
+            <div className='pay-logo'>
+              <div>
+                <label>
+                <input type="radio" name="paymentOption" value="mastercard" />
+                <img className='mastercard' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/2560px-Mastercard_2019_logo.svg.png" alt="Mastercard Logo" />
               </label>
             </div>
             <div>
@@ -82,17 +78,16 @@ const Bookings = () => {
               </label>
             </div>
             <div>
-              <label>
-                <input type="radio" name="paymentOption" value="mastercard" />
-                <img className='mastercard' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/2560px-Mastercard_2019_logo.svg.png" alt="Mastercard Logo" />
+               <label>
+                <input type="radio" name="paymentOption" value="swish" />
+                <img className='swish' src="https://images.ctfassets.net/zrqoyh8r449h/5Kbx9XCa4oJjwgUP0RNDZY/176707fc098ba9c33a4cef9b039236f6/Swish_Logo_Primary_Light-BG_P3.png?w=600" alt="Swish Logo" />
               </label>
             </div>
-          </Modal.Body>
-          <Modal.Footer>
+            </div>
             <Button className='pay' variant="primary" onClick={handlePay}>
               Pay
             </Button>
-          </Modal.Footer>
+          </Modal.Body>
         </div>
         );
       case 'confirmation':
@@ -100,18 +95,10 @@ const Bookings = () => {
         return (
       <>
         <div className="custom-modal-container">
-          <Modal.Header closeButton>
-            <Modal.Title></Modal.Title>
-          </Modal.Header>
           <Modal.Body>
-            {/* Add your confirmation content here */}
+            {}
             <p className='p'>Thank you for your purchase</p>
           </Modal.Body>
-          <Modal.Footer>
-            <Button className='btn-succes' variant="secondary" onClick={handleCloseModal}>
-              Close
-            </Button>
-          </Modal.Footer>
         </div>
       </>
         );
@@ -121,9 +108,45 @@ const Bookings = () => {
   };
 
   return (
-    <div className="d-flex flex-column align-items-center mt-4 mb-4">
+    <div className="booking-card-img">
+      <h1 className='h1-booking'>YOUR BOOKINGS</h1>
       {bookings.filter(booking => booking.room).map((booking, index) => (
-        <Card style={{ backgroundColor: 'var(--background-black-50, rgba(0, 0, 0, 0.50))', borderRadius: '16px', color: '#fff' }} key={index} className="w-75 mb-3">
+    // <div>
+    // <div className='img-booking'>
+    //     <img
+    //       src={booking.room.imageUrl} 
+    //       alt="Room"
+    //       className='image'
+    //     />
+    //   </div>
+    //     <Card style={{ backgroundColor: 'var(--background-black-50, rgba(0, 0, 0, 0.50))', borderRadius: '16px', color: '#fff' }} key={index} className="w-75 mb-3">
+    //       <Card.Body>
+    //         <Card.Title>{booking.room.title}</Card.Title>
+    //         <Card.Text>
+    //           Period: {formatDate(booking.checkin)} - {formatDate(booking.checkout)}<br />
+    //           Price/Night: {booking.room.price}kr<br />
+    //           <hr />
+    //           Total (SEK) {calculateTotalPrice(booking.checkin, booking.checkout, booking.room.price)}kr
+    //         </Card.Text>
+    //         <div className="d-flex justify-content-end">
+    //           <Button variant="primary" className="red-button" style={{ marginRight: '5px' }}>Remove</Button>
+    //           <Button variant="secondary" className="green-button" style={{ marginLeft: '5px' }} onClick={handleContinueClick}>Continue</Button>
+    //         </div>
+    //       </Card.Body>
+    //     </Card>
+    //     </div>
+
+        <div className="container-b">
+        {/* Image container */}
+        <div className='img-booking'>
+          <img
+            src={booking.room.imageUrl} 
+            alt="Room"
+            className='image'
+          />
+        </div>
+        {/* Card */}
+        <Card className="booking-details" style={{ backgroundColor: 'var(--background-black-50, rgba(0, 0, 0, 0.50))', flex: 1, margin: 0, color: "#fff"}} key={index}>
           <Card.Body>
             <Card.Title>{booking.room.title}</Card.Title>
             <Card.Text>
@@ -138,8 +161,8 @@ const Bookings = () => {
             </div>
           </Card.Body>
         </Card>
+      </div>
       ))}
-
       <Modal show={activeModal !== null} onHide={handleCloseModal}>
         {renderModalContent()}
       </Modal>

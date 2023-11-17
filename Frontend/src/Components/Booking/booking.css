@@ -1,3 +1,14 @@
+.h1-booking {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
 .red-button {
     max-width: 150px;
     width: 100%;
@@ -42,7 +53,6 @@
 .custom-modal-container {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(0,0,0,1) 100%);
-
 }
 
 .p {
@@ -95,7 +105,7 @@
     color: rgb(255, 255, 255);
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 30px;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
@@ -120,3 +130,111 @@
     height: auto; 
     margin: 10px;
   }
+  
+.pay-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+}
+
+.pay-logo label {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+.pay-logo img {
+    max-width: 100%; 
+  }
+
+
+.pay-logo input[type="radio"]:checked {
+    background-color: black;
+    border-color: black;
+  }
+
+.pay-logo input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    outline: none;
+    margin-right: 5px; 
+  }
+
+  .container-b {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .img-booking {
+    margin-bottom: 10px;
+  }
+  
+  .img-booking img {
+    width: 100%; 
+    max-width: 190px; 
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 15px;
+  }
+
+  .booking-details {
+    border-radius: '16px'; 
+    color: '#fff';
+  }
+
+  @media (max-width: 768px) {
+    .container-b {
+        flex-direction: column;
+        margin-right: 0;
+        align-items: center; /* Centrera innehållet i huvudcontainervertikalt */
+    }
+
+    .img-booking {
+        flex: 1;
+        text-align: center; /* Centrera innehållet horisontellt */
+    }
+
+    .img-booking img {
+        width: 100%;
+        height: unset;
+        align-items: stretch;
+        margin: 0 auto; /* Centrera bilden inom dess förälderelement */
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px; /* Justera detta beroende på ditt kortstilar */
+        margin: 10px; /* Justera detta beroende på ditt kortstilar */
+    }
+}
+
+
+  /* @media (max-width: 768px){
+
+    .container-b {
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .img-booking {
+        flex: 1
+    }
+
+    .img-booking img {
+        width: 100%;
+        height: unset;
+        align-items: stretch;
+    }
+  }
+
+   */
