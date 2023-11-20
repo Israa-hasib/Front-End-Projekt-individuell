@@ -49,6 +49,10 @@
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(0,0,0,1) 100%);
 }
 
+.finish {
+  width: 500px;
+  height: 300px;
+}
 
 .custom-modal-container {
     background: rgb(0,0,0);
@@ -60,7 +64,7 @@
     color: rgb(255, 255, 255);
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 115px;
     margin-bottom: 50px;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }

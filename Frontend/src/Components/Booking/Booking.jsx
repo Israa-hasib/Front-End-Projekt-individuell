@@ -95,7 +95,7 @@ const Bookings = () => {
         return (
       <>
         <div className="custom-modal-container">
-          <Modal.Body>
+          <Modal.Body className='finish'>
             {}
             <p className='p'>Thank you for your purchase</p>
           </Modal.Body>
