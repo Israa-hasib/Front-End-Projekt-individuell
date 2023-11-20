@@ -191,50 +191,43 @@
     border-radius: '16px'; 
     color: '#fff';
   }
+  
 
   @media (max-width: 768px) {
+    .h1-booking {
+      width: 90%;
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
     .container-b {
-        flex-direction: column;
-        margin-right: 0;
-        align-items: center; /* Centrera innehållet i huvudcontainervertikalt */
-    }
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
 
-    .img-booking {
-        flex: 1;
-        text-align: center; /* Centrera innehållet horisontellt */
     }
-
+  
     .img-booking img {
-        width: 100%;
-        height: unset;
-        align-items: stretch;
-        margin: 0 auto; /* Centrera bilden inom dess förälderelement */
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  
+    .booking-details {
+      width: 100%; 
+      max-width: 300px; 
+      margin: 0 auto;
     }
 
-    .card {
-        width: 100%;
-        max-width: 400px; /* Justera detta beroende på ditt kortstilar */
-        margin: 10px; /* Justera detta beroende på ditt kortstilar */
-    }
-}
 
-
-  /* @media (max-width: 768px){
-
-    .container-b {
-        flex-direction: column;
-        margin-right: 0px;
-    }
-
-    .img-booking {
-        flex: 1
-    }
-
-    .img-booking img {
-        width: 100%;
-        height: unset;
-        align-items: stretch;
-    }
   }
+  
 
-   */
