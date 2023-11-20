@@ -36,10 +36,7 @@ function BasicExample() {
 
               <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
             ) : (
-            //   <NavDropdown className='hamburger' title={<span><FontAwesomeIcon icon={faHamburger} style={{ color: '#000000' }} /></span>}><FontAwesomeIcon icon={faUser} style={{color: "#000000",}} />
-            //   <NavDropdown.Item href="/Login">Login</NavDropdown.Item>
-            //   <NavDropdown.Item href="/Register">Register</NavDropdown.Item>
-            // </NavDropdown>
+
             <NavDropdown className='hamburger' title={<span><FontAwesomeIcon icon={faHamburger} style={{ color: '#000000' }} /> <FontAwesomeIcon icon={faCircleUser} style={{ color: '#000000' }} /></span>}>
             <NavDropdown.Item href="/Login">Login</NavDropdown.Item>
             <NavDropdown.Item href="/Register">Register</NavDropdown.Item>
