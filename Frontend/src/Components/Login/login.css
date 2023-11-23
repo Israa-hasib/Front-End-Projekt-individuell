@@ -57,11 +57,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set the height of the container to full viewport height */
+    height: 100vh; 
   
-    /* Add additional styling for responsiveness */
     @media (max-width: 768px) {
-      padding: 20px; /* Add padding for smaller screens */
+      padding: 20px; 
     }
   }
   
